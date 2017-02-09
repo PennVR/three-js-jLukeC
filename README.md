@@ -1,14 +1,14 @@
 ### Name and Project Name
 Luke Carlson - Threejs project
 ### Link to GitHub Pages site
-[right here](http://pennvr.github.io/three-js-jlukec)
+[right here](https://pennvr.github.io/three-js-jLukeC/)
 ### Techniques used, and why those techniques
 For this assignment I built a version of the [diamond square algorithm](https://en.wikipedia.org/wiki/Diamond-square_algorithm) to generate my terrain from a PlaneGeometry. It seemed like a reasonable way to generate the terrain. You can see the code at js/diamond_square.js
 
 For my particle system, I created a bunch of small red spheres that explode in random directions.
 
 For controls, I used code from the PointerLockControl & webvr cube THREE.js examples. Those examples were super helpful for setting up my environment & world.
-That way I could test both with a headset in VR and on a laptop with the mouse
+That way I could test both with a headset in VR and on a laptop with the mouse (and keyboard to move around for debugging).
 ### Instructions on building/assembling/etc. Also document how to run the code
 No assembly required, just load the index.html page (which will load my js/diamond_square.js algorithm and the external libs).
 
