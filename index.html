@@ -77,6 +77,17 @@
 
         } else {
             blocker.style.display = 'none';
+                        if (navigator.getVRDisplays) {
+                navigator.getVRDisplays()
+                    .then(function(displays) {
+                        effect.setVRDisplay(displays[0]);
+                        controls.setVRDisplay(displays[0]);
+                    })
+                    .catch(function() {
+                        // no displays
+                    });
+                document.body.appendChild(WEBVR.getButton(effect));
+            }
         }
 
         var camera, scene, renderer;
