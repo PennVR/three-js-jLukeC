@@ -69,6 +69,9 @@
     <script>
         /* Code modified from misc_controls_pointer_lock & webvr_cubes examples */
 
+                var blocker = document.getElementById('blocker');
+        var instructions = document.getElementById('instructions');
+        
         if (WEBVR.isAvailable() === false) {
 
             document.body.appendChild(WEBVR.getMessage());
@@ -87,8 +90,7 @@
 
         var raycaster;
 
-        var blocker = document.getElementById('blocker');
-        var instructions = document.getElementById('instructions');
+
 
         // http://www.html5rocks.com/en/tutorials/pointerlock/intro/
 
